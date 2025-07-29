@@ -1,0 +1,17 @@
+{
+  "name": "saucedemo-pom-automation",
+  "version": "1.0.0",
+  "description": "Playwright POM automation for saucedemo.com (Chromium, Firefox, robust artifacts, deterministic)",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --reporter=html",
+    "test:parallel": "npx playwright test --workers=2",
+    "test:sequential": "npx playwright test --workers=1",
+    "screenshot": "node utils/TestUtils.js --screenshot"
+  },
+  "author": "PageObject Automation Bot",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1"
+  }
+}
